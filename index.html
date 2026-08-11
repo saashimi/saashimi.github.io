@@ -1,274 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <!-- Importing Inter font for a modern, tasteful look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #fafafa; /* Soft off-white */
+            --text-color: #1a1a1a; /* Deep charcoal */
+        }
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--bg-color);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--text-color);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-  <title>Kevin M Saavedra - Resume</title>
+        .container {
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        h1 {
+            font-weight: 300;
+            font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font size */
+            letter-spacing: -0.02em; /* Tightens the letters for a premium look */
+            margin: 0;
+        }
 
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet"> 
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="vendor/font-mfizz/css/font-mfizz.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
+        /* Subtle fade-in effect for elegance */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
+<body>
 
-<body id="page-top">
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Kevin Saavedra</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-        </li>
-      </ul>
+    <div class="container">
+        <h1>saavedra.io</h1>
     </div>
-  </nav>
-
-  <div class="container-fluid p-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Kevin
-          <span class="text-primary">Saavedra</span>
-        </h1>
-        <div class="subheading mb-5">Southern California ·
-          <a href="mailto:email@saavedra.io">email@saavedra.io</a>
-        </div>
-        <p class="lead mb-5">I'm a software product engineer specializing in GIS applications and related test automation frameworks.</p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/kevinmsaavedra/">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://www.github.com/saashimi">
-            <i class="fab fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Product Engineer</h3>
-            <div class="subheading mb-3">Esri</div>
-            <p>Member of the Geoprocessing and GeoAnalytics teams. Develop new user tools and workflows for ArcGIS Pro, as well as internal automated test frameworks.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">Jan 2019 - Present</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Researcher and Modeler</h3>
-            <div class="subheading mb-3">Metro (Portland, Oregon)</div>
-            <p>Developed Python scripts to automate Metro's multimodal travel demand model (using INRO and PTV software APIs).  Maintained and extended travel utility models in R.  Assisted Metro GIS analysts/developers with web-based mapping applications.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2017 - January 2019</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">GIS & Planning Analyst</h3>
-            <div class="subheading mb-3">Portland State University</div>
-            <p>Developed web map applications and general scripts for geoprocessing and data analysis using Python, Javascript, as well as Esri and open source tools. Supported overall GIS and Campus planning efforts for PSU, including geospatial asset tracking and database management. Maintained Campus Planning Office's ArcGIS Server deployment. </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2016 - September 2017</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Project Urban Designer</h3>
-            <div class="subheading mb-3">Community Design + Architecture</div>
-            <p>Utilized GIS software for urban analysis/cartography; AutoCAD for construction documentation; and illustration/rendering software packages for plan and graphical illustrations. Served as AutoCAD quality control manager for submittals. Prepared urban design and land use transportation guidelines and standards, construction documents and RFP/RFQ responses.</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2008 - August 2015</span>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of California, Berkeley</h3>
-            <div class="subheading mb-3">Bachelor of Arts</div>
-            <div>Geography</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2005</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of Pennsylvania</h3>
-            <div class="subheading mb-3">Master of City Planning</div>
-            <div>Urban Design Concentration</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">June 2008</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">PDX Code Guild</h3>
-            <div class="subheading mb-3">Certification</div>
-            <div>Full Stack Python Development</div>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2016</span>
-          </div>
-        </div>
-
-   
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-python"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="icon-c"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="icon-csharp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-r-project"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab icon-git"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-linux"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-
-        </ul>
-
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Geospatial Applications, End-user Focused</li>
-          <li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Esri ArcGIS Pro, Desktop, and Enterprise Stack</li>
-            <li>
-            <i class="fa-li fa fa-check"></i>
-            QA Test Automation</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Graduate with Distinction - PDX Code Guild</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Certification - Web Cartography - Hack Oregon</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Certification - Data Science in the Wild - Hack Oregon</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            David Crane Award for Excellence in Urban Design - University of Pennsylvania</li>
-          <li>
-        </ul>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
 
 </body>
-
 </html>
